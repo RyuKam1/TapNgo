@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/lexend_bold</item>
+        <item>@font/manrope</item>
+        <item>@font/roboto</item>
+        <item>@font/saira</item>
+        <item>@font/saira_semi_condensed_medium</item>
+        <item>@font/saira_semi_condensed_regular</item>
+    </array>
+</resources>

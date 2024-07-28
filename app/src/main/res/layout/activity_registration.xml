@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#02020E"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="287dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="59dp"
+        android:fontFamily="@font/lexend_bold"
+        android:text="Welcome To TapNgo"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.572"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="226dp"
+        android:fontFamily="@font/manrope"
+        android:text="Create your account"
+        android:textColor="#565D6D"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerTitle" />
+
+    <!--Registration Field-->
+
+    <TextView
+        android:id="@+id/nameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="313dp"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="@font/manrope"
+        android:text="Name"
+        android:textColor="#9095A1"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/editName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="298sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="48dp"
+        android:hint="@string/your_name"
+        android:inputType="textPersonName"
+        android:textColor="#BDC1CA"
+        android:textColorHint="#BDC1CA"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <TextView
+        android:id="@+id/EmailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="312dp"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="@font/manrope"
+        android:text="E-mail"
+        android:textColor="#9095A1"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/editEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="298sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        android:hint="JohnDoe@gmail.com"
+        android:inputType="textEmailAddress"
+        android:textColor="#BDC1CA"
+        android:textColorHint="#BDC1CA"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <TextView
+        android:id="@+id/PassTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="295dp"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="@font/manrope"
+        android:text="Password"
+        android:textColor="#9095A1"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/editPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="298sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        android:hint="Type Your Password"
+        android:inputType="textPassword"
+        android:textColor="#BDC1CA"
+        android:textColorHint="#BDC1CA"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+
+    <TextView
+        android:id="@+id/repeatTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="256dp"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="@font/manrope"
+        android:text="Repeat Password"
+        android:textColor="#9095A1"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/repeatPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/repeatPassword"
+        android:layout_width="298sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        android:hint="Repeat Your Password"
+        android:inputType="textPassword"
+        android:textColor="#BDC1CA"
+        android:textColorHint="#BDC1CA"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="131dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="213dp"
+        android:buttonTint="#D2AE7B"
+        android:text="Remember Me"
+        android:textColor="#3C3C3C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeatPassword" />
+
+    <Button
+        android:id="@+id/buttonMenu"
+        android:layout_width="298dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="#191A25"
+        android:fontFamily="@font/manrope"
+        android:text="Create an account"
+        android:textColor="#D2AE7B"
+        android:textSize="15sp"
+        app:cornerRadius="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="281dp"
+        android:fontFamily="@font/manrope"
+        android:text="Sign up with"
+        android:textColor="#565D6D"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMenu" />
+
+    <ImageButton
+        android:id="@+id/appleButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMenu"
+        app:srcCompat="@drawable/icon_apple"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/googleButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintStart_toEndOf="@+id/appleButton"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMenu"
+        app:srcCompat="@drawable/icon_google"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/fcButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintStart_toEndOf="@+id/googleButton"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMenu"
+        app:srcCompat="@drawable/icon_facebook"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:fontFamily="@font/manrope"
+        android:text="Already Have An Account?"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:fontFamily="@font/manrope"
+        android:text="Log in"
+        android:textColor="#D2AE7B"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
